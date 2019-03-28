@@ -1,0 +1,11 @@
+
+<app-textbox *ngFor="let element of elements" [element]="element"></app-textbox>
+
+<button (mousedown)="addTextBox()">New TextBox</button>
+
+<div *ngIf="footnotes.length > 0">
+  <br/>
+  Footnotes: 
+  <hr/>
+  <app-footnote *ngFor="let footnote of footnotes" [element]="footnote"></app-footnote>
+</div>
